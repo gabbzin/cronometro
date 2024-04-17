@@ -8,17 +8,12 @@
 </head>
 <body>
     <div class="container">
-        <div id="cronometro">
-            <span id="horas">00</span>
-            :
-            <span id="minutos">00</span>
-            :
-            <span id="segundos">00</span></div>
+        <div id="cronometro">00:00:00</div>
 
         <div class="botoes">
-            <button type="button" id="iniciar">Iniciar</button>
-            <button type="button" id="parar">Parar</button>
-            <button type="button" id="zerar">Zerar</button>
+            <button type="button" id="iniciar" onclick="iniciarTimer()">Iniciar</button>
+            <button type="button" id="parar" onclick="pararTimer()" disabled>Parar</button>
+            <button type="button" id="zerar" onclick="zerarTimer()">Zerar</button>
         </div>
     </div>
 
